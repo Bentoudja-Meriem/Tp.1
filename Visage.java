@@ -2,7 +2,9 @@ package videoShowSolution;
 
 import java.awt.Graphics;
 
-public class Visage implements IObjetDessinable{
+import package1.IObjetAnimable;
+
+public class Visage implements IObjetAnimable{
 	 // ---------------------------------------------------------
     // Les constantes de la classe Visage
     // ---------------------------------------------------------
