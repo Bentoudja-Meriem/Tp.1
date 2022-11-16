@@ -8,6 +8,7 @@ import javax.imageio.ImageIO;
 import javax.swing.JFrame;
 import javax.swing.WindowConstants;
 
+import videoShowSolution.IFormeAnimable;
 import videoShowSolution.MvtCirculaire;
 import videoShowSolution.Visage;
 public class LancerApp1 {
@@ -73,6 +74,13 @@ Form po=new PolygoneRegulier(5,240,40,40,4.f,color.GRAY,null);
 MvtCirculaire ep=new MvtCirculaire();
 ep.deplacer(po);
 d.ajouterObjet(po);
+////////////////////19-----afficher un visage avec un mouvement circulaire.
+IFormeAnimable f=new Visage(d);
+MvtCirculaire mv=new MvtCirculaire();
+mv.deplacer(f);
+d.ajouterObjet(f);
+
+
 
 
 
