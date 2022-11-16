@@ -7,6 +7,9 @@ import java.io.IOException;
 import javax.imageio.ImageIO;
 import javax.swing.JFrame;
 import javax.swing.WindowConstants;
+
+import videoShowSolution.MvtCirculaire;
+import videoShowSolution.Visage;
 public class LancerApp1 {
 
 	public static void main(String[] args) throws IOException {
@@ -35,12 +38,49 @@ public class LancerApp1 {
 		(float) Math.random()), d, 10, 10);
 		d.ajouterObjet(lesTrains[i]);
 		}
+	
 		Visage visage=new Visage(d);
-		d.ajouterObjet(visage);
-		Form etoile=new Etoile(200,50,50,8.f,color.RED,color.RED);
-		Form polygone=new PolygoneRegulier(5,240,40,40,4.f,color.GREEN,null);
+		d.ajouterObjet(visage);	
+		/////////12-une étoile de couleur verte
+		Form etoile=new Etoile(200,50,50,8.f,color.GREEN,color.RED);
+		/////////12-un polygone de couleur Noire
+		Form polygone=new PolygoneRegulier(5,240,40,40,4.f,color.BLACK,null);
 		d.ajouterObjet(etoile);
 		d.ajouterObjet(polygone);
+/*/////////////////////// 17--visage animés par un mouvement aléatoire
+		Visage v=new Visage(d,50,100);
+		v.deplacer();
+		d.ajouterObjet(v);
+/////////////////////// 17--TrainCercle animés par un mouvement aléatoire
+		TrainCercle[] trais= new TrainCercle[15];
+		for (int i = 0; i < 15; i++) {
+			trains[i].deplacer() ;
+		d.ajouterObjet(trains[i]);
+		}
+///////////////17-une étoile de couleur verte fixe
+Form e=new Etoile(150,40,40,8.f,color.GREEN,color.RED);
+d.ajouterObjet(e);
+///////////////////un polygone de couleur noire fixe
+Form p=new PolygoneRegulier(7,200,50,30,4.f,color.BLACK,null);
+d.ajouterObjet(p);
+//////////////17-une étoile de couleur jaune animés par un mouvement circulaire.
+Form et =new Etoile(100,60,60,8.f,color.YELLOW,color.YELLOW);
+MvtCirculaire em=new MvtCirculaire();
+em.deplacer(et);
+d.ajouterObjet(et);
+///////////////17-un polygone de couleur grise animés par un mouvement circulaire.
+Form po=new PolygoneRegulier(5,240,40,40,4.f,color.GRAY,null);
+MvtCirculaire ep=new MvtCirculaire();
+ep.deplacer(po);
+d.ajouterObjet(po);*/
+
+
+
+
+
+
+
+
 
 		
 		
