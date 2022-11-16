@@ -37,6 +37,10 @@ public class LancerApp1 {
 		}
 		Visage visage=new Visage(d);
 		d.ajouterObjet(visage);
+		Form etoile=new Etoile(200,50,50,8.f,color.RED,color.RED);
+		Form polygone=new PolygoneRegulier(5,240,40,40,4.f,color.GREEN,null);
+		d.ajouterObjet(etoile);
+		d.ajouterObjet(polygone);
 
 		
 		
