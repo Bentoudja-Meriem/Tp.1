@@ -47,7 +47,7 @@ public class LancerApp1 {
 		Form polygone=new PolygoneRegulier(5,240,40,40,4.f,color.BLACK,null);
 		d.ajouterObjet(etoile);
 		d.ajouterObjet(polygone);
-/*/////////////////////// 17--visage animés par un mouvement aléatoire
+/////////////////////// 17--visage animés par un mouvement aléatoire
 		Visage v=new Visage(d,50,100);
 		v.deplacer();
 		d.ajouterObjet(v);
@@ -72,7 +72,7 @@ d.ajouterObjet(et);
 Form po=new PolygoneRegulier(5,240,40,40,4.f,color.GRAY,null);
 MvtCirculaire ep=new MvtCirculaire();
 ep.deplacer(po);
-d.ajouterObjet(po);*/
+d.ajouterObjet(po);
 
 
 
