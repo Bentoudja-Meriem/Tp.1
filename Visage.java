@@ -4,7 +4,7 @@ import java.awt.Graphics;
 
 import package1.IObjetAnimable;
 
-public class Visage implements IObjetAnimable{
+public class Visage implements IFormeAnimable{
 	 // ---------------------------------------------------------
     // Les constantes de la classe Visage
     // ---------------------------------------------------------
